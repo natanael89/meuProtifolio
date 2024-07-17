@@ -13,7 +13,7 @@ body {
 }
 
 .background-image {
-  background-image: url("https://a.storyblok.com/f/90801/1920x600/d5fcdc8698/code-banner.png/m/");
+  background-image: url("./../public/images/download.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
