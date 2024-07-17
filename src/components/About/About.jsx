@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const About = ({userName, description1, description2, skills, abbtitls, tituloObjetivo, tituloHabilidade,  poster}) => {
     return (
         <section id="about" className="container my-5">

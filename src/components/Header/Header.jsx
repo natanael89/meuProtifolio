@@ -16,6 +16,7 @@ const Header = ({userName, subtitle}) => {
                 >
                 <h1 className="display-4 border-bottom">Olá, sou {userName}</h1>
                 <p className="lead">{subtitle}</p>        
+              
                 </motion.div>    
             </div>
         </header>

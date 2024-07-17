@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
+import Navigation from './components/Navigation/Navigation.jsx';
 import About from './components/About/About';
+import Header from './components/Header/Header';
 import Projects from './components/Projects/Projects';
 import ProjectDetails from './components/ProjectDetails/ProjectDetails';
 import Contact from './components/Contcat/Contact';
@@ -12,12 +12,10 @@ import fotoPerfil from './assets/perfil.png';
 
 function App() {
   const menuLinks = [
-    {text: 'Sobre Mim', href: '/about'},
+    {text: 'Sobre Mim', href: '/'},
     {text: 'Projetos', href: '/projects'},
     {text: 'Contato', href: '/contact'},
   ];
-
- 
 
   const skillsList = [
       {textSlill: 'Front-end: HTML, CSS, JavaScript, React'},
@@ -48,11 +46,12 @@ function App() {
     <Router>
     <div className="App">
       <div className='background-image'>
-        <Navbar userName="Natanael Carvalho dos Santos" menuLinks={menuLinks}/>
-        <Header userName="Natanael Carvalho dos Santos" subtitle="Desenvolvedor Full Stack"/>
+        <Navigation userName="Natanael carvalho dos santos" menuLinks={menuLinks}/>
+        <Header userName="Natanael carvalho dos santos" subtitle="Desenvolvedor Full Stack"/>
         <Routes>
+          {/* <Route path='/' element={<Home/>}/> */}
           <Route 
-            path='/about'
+            path='/'
             element={
               <About 
               userName="Natanael Carvalho dos Santos"
