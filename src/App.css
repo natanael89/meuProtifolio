@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-image {
+  background-image: url("https://a.storyblok.com/f/90801/1920x600/d5fcdc8698/code-banner.png/m/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  z-index: 10;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  box-shadow: 0px 0px 1px white;
+  top: 10px;
+}
+
+.centralizar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  align-content: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-link {
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.jumbotron .display-4 {
+  font-size: 2.5rem;
+  
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    box-shadow: 0px 0px 1px white;
+    top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .centralizar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+  }
+
+  .navbar-brand {
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .centralizar-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
   }
 }
