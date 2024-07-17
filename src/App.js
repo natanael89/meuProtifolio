@@ -49,7 +49,6 @@ function App() {
         <Navigation userName="Natanael carvalho dos santos" menuLinks={menuLinks}/>
         <Header userName="Natanael carvalho dos santos" subtitle="Desenvolvedor Full Stack"/>
         <Routes>
-          {/* <Route path='/' element={<Home/>}/> */}
           <Route 
             path='/'
             element={

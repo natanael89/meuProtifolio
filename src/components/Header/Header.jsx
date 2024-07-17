@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from 'framer-motion';
 
 const Header = ({userName, subtitle}) => {
-   useEffect(() => {
-       document.title = `Olá, sou ${userName}`;
-   }, [userName]);
+//    useEffect(() => {
+//        document.title = `Olá, sou ${userName}`;
+//    }, [userName]);
 
     return (
         <header className="jumbotron text-center text-white rounded-bottom d-flex justify-content-center background-image container-fluid">
@@ -14,7 +14,7 @@ const Header = ({userName, subtitle}) => {
                 transition={{type: "spring", stiffness: 100}}
                 className="centralizar-text"
                 >
-                <h1 className="display-4 border-bottom">Olá, sou {userName}</h1>
+                <h1 className="display-4 border-bottom">{userName}</h1>
                 <p className="lead">{subtitle}</p>        
               
                 </motion.div>    
