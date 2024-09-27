@@ -72,7 +72,7 @@ function App() {
             element={
               <Contact 
               contactEmail="natanaelc7@gmail.com" buttonText="natanaelc7@gmail.com"
-              linkedinProfile="https://www.linkedin.com/in/natanael-carvalho-dos-santos-879568b7/" buttonLinkedin="Linkedin"
+              linkedinProfile="https://www.linkedin.com/in/natanael-c7-879568b7/" buttonLinkedin="Linkedin"
               githubProfile="https://github.com/natanael89?tab=repositories" buttonGitHub="GitHub"
               />
             }
